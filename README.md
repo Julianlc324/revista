@@ -1,0 +1,2 @@
+# revista
+Proyecto revista - etica
