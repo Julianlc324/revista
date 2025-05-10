@@ -1,0 +1,23 @@
+ /* Notes:
+  Include padding and border in size calculation - box-sizing: border-box;
+  position based on inmediate parent - position: relative;
+  Ensure that the body fills the entire viewport - min-height: 100dvh;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  position: relative;
+
+  /* Temporal */
+  /*outline: 1px solid red;*/
+}
+body{
+  background-color: var(--body-bg);
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  min-height: 100dvh;
+}

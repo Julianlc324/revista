@@ -1,0 +1,66 @@
+/* ------------------ Container ------------------ */
+.container{
+  max-width: 1400px;
+  margin: auto;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  .header{
+    grid-area: header;
+    background-color: var(--header-bg);
+    height: 150px;
+    /*flex*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*----*/
+  }
+  .main{
+    grid-area: main;
+    background-color: var(--main-bg);
+    border-top: 1px solid var(--border-bg);
+    /*flex*/
+    display: flex;
+    /*----*/
+  }
+  .footer{
+    grid-area: footer;
+    color: var(--text-light);
+    background-color: var(--footer-bg);
+    /*flex*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*----*/
+  }
+}
+
+/* ----------------- breakpoints ----------------- */
+/* Móvil */
+@media (min-width: 320px) and (max-width: 480px) {
+  .container{
+    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+  }
+}
+/* Tableta */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container{
+    font-size: clamp(1rem, 0.875rem + 0.3vw, 1.125rem);
+  }
+}
+/* Portatil */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container{
+    font-size: clamp(1.125rem, 0.875rem + 0.5vw, 1.25rem);
+  }
+}
+/* Escritorio */
+@media (min-width: 1025px) {
+  .container{
+    font-size: clamp(1.25rem, 1rem + 0.5vw, 1.5rem);
+  }
+}

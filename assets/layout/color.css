@@ -1,0 +1,16 @@
+:root{
+  /*bg*/
+  --body-bg: #232c32;
+  --footer-bg:#1A1A1A;
+  --header-bg: #fdf9ff;
+  --main-bg: #f2f2fc;
+  /*text*/
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+  --text-color: #ec1839;
+  --text-light: #ffffff;
+  /*button*/
+  --button-bg: #ff5f5f; 
+  /*border*/
+  --border-bg: #e8dfec;
+}
