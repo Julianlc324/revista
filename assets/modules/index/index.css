@@ -31,6 +31,9 @@
 }
 /* -------------------------------------------- */
 /*main*/
+.main{
+  background-color: var(--main-bg);
+}
 .main__header{ 
   padding: 0 20px;
   line-height: 2 
